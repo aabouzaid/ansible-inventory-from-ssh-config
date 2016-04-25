@@ -1,5 +1,5 @@
 #! /bin/bash
-#This snippet assume each "Host", "Hostname", "Port", "User" in separated line, and valid ssh config file.
+#This script assume each "Host", "Hostname", "Port", "User" in separated line, and valid ssh config file.
 
 # Main vars.
 config_file=~/.ssh/config
