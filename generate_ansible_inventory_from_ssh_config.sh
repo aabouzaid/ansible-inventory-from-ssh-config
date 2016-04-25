@@ -3,6 +3,7 @@
 
 # Main vars.
 config_file=~/.ssh/config
+ansible_version="v2"
 
 # Help message.
 help_message () { cat << EOF
