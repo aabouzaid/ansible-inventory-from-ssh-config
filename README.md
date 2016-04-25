@@ -52,6 +52,7 @@ Host Server2
   ```
 
 You will get that:
+
 Ansible v2.0 syntax:
 ```
 Server1 ssh_host=10.0.0.1 ssh_port=22 ssh_user=xuser
