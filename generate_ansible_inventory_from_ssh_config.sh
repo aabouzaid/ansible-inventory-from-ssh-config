@@ -70,15 +70,15 @@ ansible_user="${ansible_syntax}ssh_user="
 # Replace SSH config style with Ansible style.
 ssh_conf_to_ansible () {
 awk -v host="${ansible_host}" -v port="${ansible_port}" -v user="${ansible_user}" \
-  'BEGIN{IGNORECASE=1}
+  'BEGIN {IGNORECASE=1}
    {
       gsub(/\s+/," ");
-      gsub("Host ","");
-      gsub("Hostname ",host);
-      gsub("Port ",port);
-      gsub("User ",user);
+      gsub(/\s*Host\s+/,"");
+      gsub(/\s*Hostname\s+/,host);
+      gsub(/\s*Port\s+/,port);
+      gsub(/\s*User\s+/,user);
    };
-   NR%4{printf $0" ";
+   NR%4 {printf $0" ";
       next;
    }1'
 }
