@@ -6,6 +6,11 @@ config_file=~/.ssh/config
 
 # Help message.
 help_message () { cat << EOF
+Description:
+  Simple Bash and AWK script to generate Ansible inventory from SSH config file.
+  This script assumes you have "Host", "Hostname", "Port", "User" in separated lines,
+  and valid SSH config file (there are no checks or tests done at all).
+
 Syntax:
   ./$0 [-s ansible_version] [-f ssh_config_file]
 
