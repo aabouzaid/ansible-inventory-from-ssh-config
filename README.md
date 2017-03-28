@@ -65,4 +65,8 @@ Server1 ansible_ssh_host=10.0.0.1 ansible_ssh_port=22 ansible_ssh_user=xuser
 Server2 ansible_ssh_host=10.0.0.2 ansible_ssh_port=22 ansible_ssh_user=xuser
 ```
 
-
+About.
+-------
+* **By:** Ahmed M. AbouZaid ([tech.aabouzaid.com](http://tech.aabouzaid.com/)).
+* **Version:** v0.01
+* **License:** GPL v2.0 or later.
